@@ -186,6 +186,16 @@ label + input[type="radio"] + label {
   .himg1
   {
     background-image: url("../img/header1.jpg") !important;
+    color: black !important;
+  }
+  .himg1 p{
+    color: black !important;
+    font-weight: 600 !important;
+  }
+
+  .himg1 strong{
+    color: black !important;
+    font-weight: 900 !important;
   }
 
 
