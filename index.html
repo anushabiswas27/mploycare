@@ -31,6 +31,7 @@
 
   <body id="page-top">
 
+    <div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -136,31 +137,42 @@
               </div>
           </div>
           <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                
-                  <div class="container">
-                      <div>
-                      <label class="bs-switch">
-                          <input type="checkbox">
-                          <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-8 mx-auto text-center">
+              
+              <div class="col-lg-12 mx-auto text-center">
                   <div class="card">
-                      <div class="card-header">
-                          <form class="">
+                      <div class="card-header" style="padding: 5px !important;">
+                          <form class="" >
                               <div class="radio-group">
-                             <input type="radio" id="option-one" checked="checked" name="selector"><label for="option-one">One</label>
-                             <input type="radio" id="option-two" name="selector"><label for="option-two">Two</label>
-                             <input type="radio" id="option-three" name="selector"><label for="option-three">Three</label>
+                                <input type="radio" id="option-one" checked="checked" name="selector"><label for="option-one">Industry</label>
+                                <input type="radio" id="option-two" name="selector"><label for="option-two">Occupation</label>
                                </div>
                                 </form>
                       </div>
                       <div class="card-body">
-                          <div id="Anthony_chart_div">
-                      </div>
+                        <div id="industry_chart_div">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a id="o-2013" onclick="yearClick2(event)">2013</a></li>
+                                <li><a id="o-2014" onclick="yearClick2(event)" >2014</a></li>
+                                <li><a id="o-2015" onclick="yearClick2(event)" >2015</a></li>
+                                <li><a id="o-2016" onclick="yearClick2(event)" >2016</a></li>
+                                <li><a id="o-2017" onclick="yearClick2(event)" >2017</a></li>
+                                <li><a id="o-2018" onclick="yearClick2(event)" >2018</a></li>
+                            </ul>
+                            <div id="chart_div_2"></div>
+                        </div>
+                        <div id="occupation_chart_div" class="container">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a id="i-2013" onclick="yearClick(event)">2013</a></li>
+                                <li><a id="i-2014" onclick="yearClick(event)">2014</a></li>
+                                <li><a id="i-2015" onclick="yearClick(event)" >2015</a></li>
+                                <li><a id="i-2016" onclick="yearClick(event)" >2016</a></li>
+                                <li><a id="i-2017" onclick="yearClick(event)" >2017</a></li>
+                                <li><a id="i-2018" onclick="yearClick(event)" >2018</a></li>
+                            </ul>
+                            <div id="chart_div_1"></div>
+                        </div>
+                        
+                    </div>
                     </div>
               </div>
           </div>
@@ -249,6 +261,7 @@
         </div>
       </footer>
       <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -271,8 +284,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/vendor/creative.min.js"></script>
-    <script src="js/googleChart.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/googleChart_barchart_industry.js"></script>
+    <script src="js/googleChart_barchart_occupation.js"></script>
 
   </body>
 
