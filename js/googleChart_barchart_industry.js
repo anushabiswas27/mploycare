@@ -2,7 +2,7 @@ google.charts.load('current', {'packages':['bar']});
 //google.charts.setOnLoadCallback(drawChart);
 
 function chart2() {
-  var data = google.visualization.arrayToDataTable(changeIndustryData());
+  var data = google.visualization.arrayToDataTable(changeOccupationData());
 
   var options = {
     chart: {
@@ -14,7 +14,6 @@ function chart2() {
       startup: true
         },
     bars: 'vertical',
-    vAxis: {format: 'number'},
     height: 450,
     colors: ['#006203', '	#0f9200', '#30cb00' ,'#ff7e7e', '#ff6969', '#ff5353', '#ff3b3b']
   };

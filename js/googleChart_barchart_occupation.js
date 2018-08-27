@@ -15,7 +15,8 @@ function chart1() {
       startup: true
         },
     bars: 'vertical',
-    vAxis: {format: 'number'},
+    vAxis: {title : "employee number"},
+    hAxis : {title : "Occupation" , slantedText:true},
     height: 450,
     colors: ['#006203', '	#0f9200', '#30cb00' ,'#ff7e7e', '#ff6969', '#ff5353', '#ff3b3b']
   };

@@ -204,11 +204,6 @@ label + input[type="radio"] + label {
     background-image: url("../img/header2.jpg") !important;
   }
   
-  body {
-    padding : 10px ;
-    
-  }
-  
   #occupation_chart_div ul{
     border-bottom: 2px solid rgb(0,147,209);
   }
@@ -221,6 +216,27 @@ label + input[type="radio"] + label {
   }
 
   #occupation_chart_div li.active{
+    /* border: 2px solid rgb(0,147,209); */
+    border-bottom-color:transparent;
+    padding: 10px;
+    border-radius: 4px 4px 0px 0px;
+    color:white;
+    background-color: rgb(0,147,209);
+  }
+
+
+  #industry_chart_div ul{
+    border-bottom: 2px solid rgb(0,147,209);
+  }
+
+  #industry_chart_div li{
+    padding: 10px;
+    /* order: 2px solid #f05f40; */
+    border-radius: 5px;
+    padding-right: 20px;
+  }
+
+  #industry_chart_div li.active{
     /* border: 2px solid rgb(0,147,209); */
     border-bottom-color:transparent;
     padding: 10px;
