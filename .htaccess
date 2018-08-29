@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Enter Details"
+AuthUserFile mploycare/.httext
+require valid-user
